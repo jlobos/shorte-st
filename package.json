@@ -1,0 +1,33 @@
+{
+  "name": "shorte-st",
+  "version": "0.0.1",
+  "description": "Shorten URLs using Shorte.st and earn money",
+  "license": "MIT",
+  "repository": "jlobos/shorte-st",
+  "author": "Jesús Lobos <jlobitu@gmail.com>",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "standard && ava"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "files": [
+    "lib/index.js"
+  ],
+  "keywords": [
+    "shorte.st",
+    "shorten",
+    "urls",
+    "money",
+    "link",
+    "shortener"
+  ],
+  "dependencies": {
+    "request": "^2.74.0"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "standard": "^8.0.0"
+  }
+}
