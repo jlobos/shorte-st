@@ -1,13 +1,12 @@
-
 import test from 'ava'
-import Shorte from '../lib/index'
+import short from './index'
 
-const shorte = new Shorte(process.env.TOKEN)
+test('short', async t => {
+  const {
+    status,
+    shortenedUrl
+  } = await short({ token: 'b6705b3c12ac040e44b33d1a40d83731', url: 'https://www.google.com' })
 
-test.cb('short', t => {
-  shorte.short('google.com', (e, r) => {
-    t.falsy(e)
-    t.is(typeof r, 'object')
-    t.end()
-  })
+  t.is(status, 'ok')
+  t.is(shortenedUrl, 'http://sh.st/MWg3X')
 })
