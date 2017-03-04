@@ -11,7 +11,7 @@ module.exports = ({ token, url }) => {
       body: `urlToShorten=${url}`
     }).then(res => {
       if (res.status !== 200) {
-        return reject('Error occurred in fetch API')
+        return reject(Error('Error occurred in fetch API'))
       }
 
       res.json().then(data => resolve(data))
