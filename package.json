@@ -24,7 +24,7 @@
     "shortener"
   ],
   "dependencies": {
-    "node-fetch": "^1.6.3"
+    "node-fetch": "^1.7.1"
   },
   "devDependencies": {
     "ava": "^0.19.1",
